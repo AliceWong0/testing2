@@ -31,7 +31,6 @@ flutter:
     - assets/labels.txt
     - assets/music/angry/
     - assets/music/sad/
-    - assets/music/fear/
     - assets/music/disgust/
     - assets/images/Cloud.jpg
     - assets/images/vinyl.png
