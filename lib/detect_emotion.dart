@@ -52,7 +52,7 @@ class _DetectResultPageState extends State<DetectResultPage> {
   @override
   Widget build(BuildContext context) {
     double boxWidth = 300;
-    double photoSize = boxWidth; // 保持正方形照片
+    double photoSize = boxWidth;
 
     return Scaffold(
       appBar: AppBar(
@@ -103,7 +103,7 @@ class _DetectResultPageState extends State<DetectResultPage> {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      // 标题
+                      
                       Text(
                         "Detection Result",
                         textAlign: TextAlign.center,
@@ -114,7 +114,7 @@ class _DetectResultPageState extends State<DetectResultPage> {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // 照片
+                      
                       _loading
                           ? SizedBox(
                               width: photoSize,
@@ -133,7 +133,7 @@ class _DetectResultPageState extends State<DetectResultPage> {
                                 )
                               : SizedBox(width: photoSize, height: photoSize),
                       const SizedBox(height: 16),
-                      // 检测结果
+                      
                       Text(
                         _loading
                             ? "Detecting..."
@@ -146,7 +146,7 @@ class _DetectResultPageState extends State<DetectResultPage> {
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // 垂直排列按钮，高度宽度统一
+                      
                       SizedBox(
                         width: double.infinity,
                         child: Column(
